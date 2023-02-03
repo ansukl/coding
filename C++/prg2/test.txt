@@ -1,0 +1,5 @@
+clear_all
+clear_trains
+read "example-stations.txt"
+read "example-trains.txt"
+route_any tus roi

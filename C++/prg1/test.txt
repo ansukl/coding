@@ -1,0 +1,7 @@
+add_station 33 "Park" (3,3)
+add_station 66 "Bay" (50,0)
+add_station 987654321 "Shelter" (21,22)
+add_station 123456789 "Fire" (11,12)
+change_station_coord 33 (30,40)
+stations_distance_increasing
+all_stations

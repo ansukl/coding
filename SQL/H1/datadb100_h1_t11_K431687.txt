@@ -1,0 +1,10 @@
+-- Database basics 2021
+-- H1 T11
+-- anna.kleemola@tuni.fi
+
+a. true
+b. false
+c. unknown
+d. unknown
+e. true
+f. false

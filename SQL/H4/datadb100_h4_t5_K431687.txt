@@ -1,0 +1,12 @@
+-- Database basics 2021
+-- H4 T5
+-- anna.kleemola@tuni.fi
+
+a. false
+b. unknown
+c. true
+d. unknown
+e. unknown
+f. false
+g. unknown
+h. true

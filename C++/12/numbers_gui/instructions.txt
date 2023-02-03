@@ -1,0 +1,50 @@
+Peli 2048
+
+Käyttöohjeet:
+
+Pelissä on tarkoitus yhdistellä keskenään samanarvoisia numerolaattoja isommiksi numeroiksi niin, että peliruudukosta löytyy lopulta laatta, joka vastaa 
+tavoitelukua (esim. 2048). Laattoja, jotka ovat keskenään eriarvoisia, ei voi yhdistää toisiinsa. Peli päättyy, kun ruudukosta löytyy tavoitelukua vastaava 
+numerolaatta, tai jos jokainen ruudukon ruuduista täyttyy numeroilla.
+
+Valitse haluamasi siemenluku ('seed value' jonka perusteella peliruudukko täytetään, 0-50) ja tavoiteluku ('target value' jota kohti pelissä pyritään, 
+4-4096, oletuksena 2048) käyttämällä ylävasemmalta löytyviä liukusäätimiä. Peli käynnistyy ja peliruudukko täyttyy, kun painat Start-nappulaa. Käytä 
+numerolaattojen liikuttamiseen näppäimistön WASD-näppäimiä:
+
+	- W ohjaa laatat ylöspäin
+	- A ohjaa laatat vasemmalle
+	- S ohjaa laatat alaspäin
+	- D ohjaa laatat oikealle
+
+Huom! Nuolinäppäimet eivät liikuta laattoja!
+
+Painamalla Reset-nappulaa voit keskeyttää meneillään olevan pelin ja tyhjentää eli "resetoida" laudan. Kun voitat tai häviät pelin, saat ilmoituksen
+voitosta/häviöstä etkä voi enää siirrellä numerolaattoja ruudukossa. Voiton/häviön jälkeen voit aloittaa uuden pelin painamalla Reset-nappulaa.
+Huomaa, että et voi muokata siemenlukua tai tavoitelukua kesken käynnissä olevan pelin, joten paina Reset-nappulaa, jos haluat asettaa niihin uudet arvot ja 
+aloittaa uuden pelin.
+
+
+Ohjelman rakenne ja tehdyt suunnittelupäätökset:
+
+Ohjelma on tehty annetun koodipohjan päälle. Annetussa koodipohjassa on toteutettu kaikki pelin taustatoiminnallisuus, joka on kytketty itse toteutettuun graafiseen 
+käyttöliittymään. Annettuun koodipohjaan on lisätty muutama uusi metodi (numbertile.hh: get_value ja reset_value, gameboard.hh: get_value ja reset_tiles), joiden avulla 
+voidaan hakea ja nollata numerolaattojen arvot. Lisäksi annetussa koodipohjassa on tehty pieniä muokkauksia gameboard-luokassa init_empty- ja fill-metodeihin, jotta 
+fill-funktiota voidaan kutsua aina, kun Start-nappulaa painetaan, ilman että luodaan jokaisella kerralla uusia numerolaattaolioita. Graafiseen käyttöliittymään liittyvät 
+metodit löytyvät mainwindow-luokasta, ja ne on yritetty jakaa järkeviksi kokonaisuuksiksi.
+
+Siemenluvun ja tavoiteluvun kysyntään käytetään liukusäätimiä, koska niiden avulla on helppo hallita käyttäjän antamaa syötettä. Kun käyttäjä voi valita vain valmiiksi 
+annetuista vaihtoehdoista, ohjelma ei saa virheellisiä syötteitä eikä syötteiden oikeellisuutta tarvitse siis sen enempää tarkastella. Vaikka liukusäätimien käyttö 
+rajoittaakin käyttäjän mahdollisuuksia pelin kustomoimiseen, pelin toiminnallisuuden ja käyttäjäystävällisyyden kannalta valmiiksi annetut arvot vaikuttivat silti järkevältä 
+ratkaisulta: pelaaja voi edelleen siemenlukua vaihtamalla valita 50 eri pelitilanteen väliltä, ja maksimiksi asetetun tavoiteluvun 4096 saavuttaminen on jo vaikeaa.
+
+Kun käyttäjä ei ole vielä painanut Start-nappulaa eli peli ei ole käynnissä, Reset-nappulaa ei voi painaa/käyttää. Liukusäätimien arvoja voi vielä tässä vaiheessa muokata. 
+Kun käyttäjä painaa Start-nappulaa ja käynnistää pelin, käyttäjältä otetaan puolestaan pois mahdollisuus siemenluvun ja tavoiteluvun muokkaamiseen ja Start-nappulan uudelleen 
+painamiseen, kunnes Reset-nappulaa painetaan. Näin estetään vahinkoklikkausten ja ei-toivottujen toimintojen mahdollinen vaikutus peliin mutta annetaan käyttäjälle mahdollisuus 
+muokata asetuksia seuraavaa peliä varten.
+
+
+Lisäominaisuudet:
+
+Peliruudukon eri arvoiset numerolaatat näkyvät eri värisinä suunnilleen sillä periaatteella, että laatan arvon kasvaessa myös väri tummenee/kirkastuu.
+
+Kun pelaaja voittaa tai häviää pelin, käyttöliittymän taustaväri vaihtuu joko vihreäksi (voitto) tai punaiseksi (häviö) ja oikeaan yläkulmaan tulee ilmoitus voitosta/häviöstä.
+Kun käyttäjä painaa Reset-nappulaa, taustaväri palautuu ennalleen.

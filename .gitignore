@@ -1,0 +1,7 @@
+*.class
+.DS_Store
+.qmake.stash
+Makefile*
+debug
+*pro.user
+usersannakappdatalocal*

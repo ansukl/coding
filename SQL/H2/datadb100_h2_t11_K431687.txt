@@ -1,0 +1,22 @@
+-- Database basics 2021
+-- H2 T11
+-- anna.kleemola@tuni.fi
+
+
+a) Yes, the update operation is executed because the manufacturer ID value in the ice_cream table is not a target of any reference
+
+b) No, the insert operation is not executed because the manufacturer ID cannot be NULL, as defined in the table creation statement
+
+c) No, the insert operation is not executed because the manufacturer table does not have a row with manufacturer_id = 9 (manufacturer table is referenced)
+
+d) No, the insert operation is not executed because the ingredient ID is a target of a reference
+
+e) Yes, the update operation is executed because the ingredient ID value 6 is not referenced anywhere
+
+f) Yes, the update operation is executed because the ice_cream_name value is not a target of any reference
+
+g) No, the delete operation is not executed because the manufacturer_id value is a target of a reference and cannot be deleted
+
+h) No, the insert operation is not executed because a row with the same ice_cream_id and ingredient_id values already exists in the table
+
+i) Yes, the update operation is executed because the ice cream ID value 4 exists in the referenced table
