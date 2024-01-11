@@ -1,0 +1,45 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'19'
+-sourcepath
+'C:/Users/annak/OneDrive - TUNI.fi/Ohjelmointi3/Git/round10/javadocjson/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/annak/OneDrive - TUNI.fi/Ohjelmointi3/Git/round10/javadocjson/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'json 1.0 API'
+-use
+-version
+-windowtitle
+'json 1.0 API'
+fi.tuni.prog3.json
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\src\main\java = 1678901460885
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\allclasses-index.html = 1678906680063
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\allpackages-index.html = 1678906680065
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\copy.svg = 1678906680105
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\element-list = 1678906680002
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\help-doc.html = 1678906680098
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\index-all.html = 1678906680090
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\index.html = 1678906680094
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\jquery-ui.overrides.css = 1678906680122
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\member-search-index.js = 1678906680071
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\module-search-index.js = 1678906680067
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\overview-tree.html = 1678906680051
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\package-search-index.js = 1678906680068
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\script.js = 1678906680103
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\search-page.js = 1678906680110
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\search.html = 1678906680092
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\search.js = 1678906680108
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\stylesheet.css = 1678906680102
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\tag-search-index.js = 1678906680072
+C:\Users\annak\OneDrive - TUNI.fi\Ohjelmointi3\Git\round10\javadocjson\target\site\apidocs\type-search-index.js = 1678906680069
